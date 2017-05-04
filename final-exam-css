@@ -1,45 +1,61 @@
-body {
-  background-color: red;
-}
-.container {
-  margin: auto;
-  background-color: white;
-  max-width: 700px;
-  overflow: auto;
-}
-img {
-  max-width: 95%;
-  margin: auto;
-}
-.column-left, .column-right {
-  padding-top: 35px;
-}
-@media(min-width: 650px) {
-  .column-left {
-    float: left;
-    width: 66%;
-  }
-  .column-right {
-    float: right;
-    width: 33%;
-  }
-}
-a {
-  color: green;
-}
-h3 {
-  font-weight: normal;
-  padding-bottom: 2px;
-}
-h2 {
-  margin-top: 0px;
-  font-size: 24px;
-  font-style: italic;
-}
-h1, h2, h3 {
-  font-family: "Georgia", serif;
-}
-.source {
-  padding-bottom: 20px;
-  border-bottom: 5px solid #E8E8E8;
-}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Aaron Schnautz</title>
+    <link rel="stylesheet" href="final-exam-css.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>11 Festive Holiday Christmas Cake Recipes</h1>
+      <p class="source">Source: <a href="http://www.epicurious.com/recipes-menus/our-most-festive-holiday-christmas-cakes-recipes-gallery" target="_blank">epicurious.com</a></p>
+      <div class="column-left">
+        <ul>
+          <img src="http://assets.epicurious.com/photos/54b288f19a93d64c380b2091/6:4/w_1024%2Ch_682/368939_gingerbread-cake_1x1.jpg"/>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/gingerbread-cake-368939" target="_blank">Gingerbread Cake</a></h3></li>
+          <p>Store-bought lemon curd is gently folded into the whipped cream topping to add a unique twist to the cake.</p>
+          <img src="http://assets.epicurious.com/photos/56016c69bd6b8b837d72d4b3/6:4/w_1024%2Ch_682/1211-BA-FOBA.02.jpg"/>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/spiced-cranberry-bundt-cake-350418" target="_blank">Spiced Cranberry Bundt Cake</a></h3></li>
+          <p>Plain Greek yogurt helps keep this festive cake extra moist.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/a-fruitcake-to-love-240697" target="_blank">A Fruitcake to Love</a></h3></li>
+          <p>Oil-cured olives add a surprisingly briny, salty hit to this sweet fruitcake.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/devils-food-cake-with-peppermint-frosting-350770" target="_blank">Devil's Food Cake with Peppermint Frosting</a></h3></li>
+          <p>Layers of dark chocolate ganache and white chocolate cream help put this cake over the top.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/cinnamon-bun-bundt-cake-51196640" target="_blank">Cinnamon Bun Bundt Cake</a></h3></li>
+          <p>Of course, any leftovers of this cake are a welcome treat at breakfast the next morning.</p>
+        </ul>
+        <div id="more-recipes" style="display:none;">
+          <ul>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/cranberry-spice-cake-368253">Cranberry Spice Cake</a></h3></li>
+          <p>An easy lemon glaze adds an extra layer of brightness to this seasonal cake.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/chocolate-glazed-hazelnut-mousse-cake-233810">Chocolate-Glazed Hazelnut Mousse Cake</a></h3></li>
+          <p>This cake can be made up to 2 days ahead of time and stored in the fridge—just be sure to leave the glaze off until the day you serve it.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes-menus/our-most-festive-holiday-christmas-cakes-recipes-gallery/9">Spiced Chai Bundt Cake</a></h3></li>
+          <p>Chai tea leaves and pumpkin pie spice lend a hefty dose of warm spice to this simple cake.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/black-forest-cake-51125600">Black Forest Cake</a></h3></li>
+          <p>This beautiful cake is definitely a project but it's just the thing to serve at a holiday gathering.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/ginger-spice-cake-with-dried-cherries-395034">Ginger Spice Cake with Dried Cherries</a></h3></li>
+          <p>While this cake is amazing with chocolate icing drizzled on top, it's also perfect with just a dusting of powdered sugar.</p>
+          <li><h3><a href="http://www.epicurious.com/recipes/food/views/peppermint-ice-cream-candyland-cake-240698">Peppermint Ice Cream Candyland Cake</a></h3></li>
+          <p>This cake, made with store-bought peppermint stick ice cream, couldn't be more festive.</p>
+        </div>
+      </div>
+      <div class="column-right">
+        <h2>More lists on epicurious.com</h2>
+        <ul>
+          <li><a href="http://www.epicurious.com/recipes-menus/clean-restorative-bowl-food-article" target="_blank">3 New Recipes for Bowl Food (Yes, Bowl Food)</a></li>
+          <li><a href="http://www.epicurious.com/recipes-menus/three-five-ingredient-pastas-for-winter-recipes-article" target="_blank">Secrets of 5-Ingredient Pastas</a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+      function show() {
+        $('#more-recipes').slideDown();
+      }
+      function hide() {
+        $('#more-recipes').hide();
+      }
+    </script>
+  </body>
+</html>
